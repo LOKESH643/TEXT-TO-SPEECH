@@ -15,8 +15,7 @@ voiceSelect.addEventListener("change", () =>{
     speech.voice = voices[voiceSelect.value];
 })
 
-document.querySelector(".btn2")
-addEventListener("click", () =>{
+document.getElementById("btn2").addEventListener("click", () =>{
     speech.text = document.querySelector("textarea").value;
     window.speechSynthesis.speak(speech);
 })
